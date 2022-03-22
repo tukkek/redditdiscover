@@ -21,7 +21,7 @@ def generate():
   with open('output.html','w') as html:
     print(HTML,file=html)
     for s in dict.fromkeys(SUBS):
-      a=f'<a href="https://reddit.com/r/{s}" target="_blank">{s}</a>'
+      a=f'<a href="https://reddit.com/r/{s}/top/?sort=top&t=month" target="_blank">{s}</a>'
       print(f'<div class="subreddit">{a}</div>',file=html)
       
 while True:
