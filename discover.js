@@ -14,6 +14,7 @@ async function get(){
     let a=s.querySelector('a')
     a.href=`https://reddit.com/r/${name}/top/?sort=top&t=month`
     a.innerHTML=name
+    a.onclick=()=>a.scrollIntoView()
     document.body.appendChild(s)
   }
   run()
