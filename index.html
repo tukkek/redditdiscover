@@ -1,0 +1,14 @@
+<title>reddit discover</title>
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta charset="utf-8">
+<style>
+  .subreddit{margin:.5em;display:inline-block;}
+  a:focus{border:black solid 1px;}
+</style>
+<template id='subreddit'>
+  <div class="subreddit"><a target="_blank"></a></div>
+</template>
+<script type='module'>
+  import * as discover from './discover.js'
+  discover.run()
+</script>
